@@ -18,15 +18,18 @@ class Home extends StatelessWidget {
             "Lern Flutter the fun way !!!",
             style: TextStyle(
               color: Colors.white,
-              fontSize: 20,
+              fontSize: 24,
             ),
           ),
         ),
-        ElevatedButton(
-            style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 80, 5, 141)),
-            onPressed: () {},
-            child: const Text("Start Quiz"))
+        OutlinedButton(
+          style: OutlinedButton.styleFrom(
+            foregroundColor: Colors.white,
+            backgroundColor: const Color.fromARGB(255, 80, 5, 141),
+          ),
+          onPressed: () {},
+          child: const Text("Start Quiz"),
+        )
       ],
     );
   }
