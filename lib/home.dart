@@ -11,25 +11,29 @@ class Home extends StatelessWidget {
         Image.asset(
           'assets/images/quiz-logo.png',
           width: 300,
+          color: const Color.fromARGB(150, 255, 255, 255),
         ),
         Container(
           padding: const EdgeInsets.all(30),
           child: const Text(
-            "Lern Flutter the fun way !!!",
+            "Learn Flutter the fun way !!!",
             style: TextStyle(
               color: Colors.white,
               fontSize: 24,
             ),
           ),
         ),
-        OutlinedButton(
+        OutlinedButton.icon(
           style: OutlinedButton.styleFrom(
             foregroundColor: Colors.white,
             backgroundColor: const Color.fromARGB(255, 80, 5, 141),
           ),
-          onPressed: () {},
-          child: const Text("Start Quiz"),
-        )
+          icon: const Icon(Icons.arrow_right_alt),
+          onPressed: () {
+            
+          },
+          label: const Text("Start Quiz"),
+        ),
       ],
     );
   }
