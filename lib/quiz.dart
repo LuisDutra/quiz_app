@@ -28,8 +28,9 @@ class _QuizState extends State<Quiz> {
 
     if (selectAnswers.length == questions.length) {
       setState(() {
-        selectAnswers = [];
-        activeScreen = const ResultsScreen();
+        activeScreen = ResultsScreen(
+          choosenAnswer: selectAnswers,
+        );
       });
     }
   }
